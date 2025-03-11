@@ -1,16 +1,27 @@
+@font-face {
+    font-family: 'Halenoir-Light';
+    src: url('fonts/Halenoir-Light.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 body {
-    background: black;
+    background: #0d0d0d;
     padding: 0px;
     margin: 0px;
+    font-family: 'EuropaGroteskMedium', sans-serif;
 }
 
 .navbar {
     border-bottom: 2px solid #232323;
+    background-color: black;
     display: flex;
     height: 26px;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 10px 40px;
+    letter-spacing: .1px;
 }
 
 .navbar-left, .navbar-right{
@@ -19,10 +30,15 @@ body {
     gap: 10px;
 }
 
+.navbar .navbar-left li{
+    color: white;
+    font-size: 16px;
+}
+
 .navbar-center{
     display:flex;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
     flex-grow: 1;
     justify-content: center;
 }
@@ -35,7 +51,7 @@ body {
 .navbar li{
     color: #828282;
     list-style: none;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .navbar .login {
@@ -46,5 +62,52 @@ body {
     background-color: white;
     color: black;
     padding: 3px;
+    height: 30px;
+    width: 100px;
     border: none;
+    margin-left: 8px;
+    border-radius: 8px;
+    letter-spacing: .5px;
+}
+
+.first-body-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 900px;
+    align-items: center;
+}
+
+.first-body-section > :nth-child(1) {
+    color:yellow;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.first-body-section > :nth-child(2) {
+    color:white;
+    font-size: 50px;
+    letter-spacing: -1px;
+    font-weight: 300px;
+}
+
+.first-body-section > :nth-child(3) {
+    color:#828282;
+    font-size: 17px;
+    max-width: 500px;
+    margin: 10px;
+}
+
+.first-body-section .get-started {
+    background-color: white;
+    color: black;
+    padding: 3px 12px;
+    height: 36px;
+    width: auto;
+    border: none;
+    font-size: 16px;
+    border-radius: 8px;
+    letter-spacing: normal;
+    margin-top: 14px;
 }
